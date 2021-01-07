@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    name: university  # name of database
+    url: jdbc:mysql://localhost:3306/university   # url
+    username: root    # username
+    password: root  # password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Driver for database connection
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.ellensdemo.bean
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
